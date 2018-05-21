@@ -21,7 +21,7 @@ public class DontForgetTheLyrics {
 	public static void main(String[] args) {
 		// 4. Make a pop-up to explain the game.
 JOptionPane.showMessageDialog(null, "So, the rules of this game are to finish the next few lyrics of a certin song."
-		+ "use correct spelling, punctuation, and ");
+		+ "use correct spelling and punctuation.");
 		// 5. Use the playSound method to play your song.
 playSound("The Baddest Girl.wav");
 		// 6. Make a pop-up for the player to type their answer.
