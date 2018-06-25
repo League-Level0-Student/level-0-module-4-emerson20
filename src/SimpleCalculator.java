@@ -4,17 +4,25 @@ import javax.swing.JOptionPane;
 
 public class SimpleCalculator {
 	public static void main(String[] args) {
+		
+	// 6. Wrap steps 1, 2 and 5 in a for loop to repeat calculator operations
+		for (int i = 0; i < 11; i++) {
 
-		// 1. Get 2 numbers from the user and convert them to integer.
-
-		// 2. Customize pop-up to support add/subtract/multiply/divide operations.
-		int operation = JOptionPane.showOptionDialog(null, "The question", "Pop-up Title", 0,
-				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Button1", "Button2", "Button3", "Button3" },
+	// 1. Get 2 numbers from the user and convert them to integer.
+String two = JOptionPane.showInputDialog("Will you please list a number which to inlitten us with.");
+String one = JOptionPane.showInputDialog("Please give us another number.");
+int num = Integer.parseInt(two);
+int tum = Integer.parseInt(one);
+	// 2. Customize pop-up to support add/subtract/multiply/divide operations.
+		int operation = JOptionPane.showOptionDialog(null, "Ddo you want to subtract, add, divid, or multiply.", "Pop-up Title", 0,
+				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "subtract", "add", "divid", "multiply" },
 				null);
 
-		// 5. Call the methods created in steps 3 and 4 to perform the appropriate operation.
-
-		// 6. Wrap steps 1, 2 and 5 in a for loop to repeat calculator operations
+	// 5. Call the methods created in steps 3 and 4 to perform the appropriate operation.
+		
+		
+		}
+		
 	}
 
 	// 3. Create method for addition operation.
